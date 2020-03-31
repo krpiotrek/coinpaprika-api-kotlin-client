@@ -23,7 +23,7 @@ dependencies {
     // Networking
     api apiDependencies.retrofit
     implementation apiDependencies.retrofitScalars
-    implementation apiDependencies.gson
+    api apiDependencies.gson
     implementation apiDependencies.gsonConverter
     implementation apiDependencies.loggingInterceptor
 
