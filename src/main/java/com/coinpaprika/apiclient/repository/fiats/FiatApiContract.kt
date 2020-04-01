@@ -9,5 +9,5 @@ import retrofit2.http.GET
 
 interface FiatApiContract {
     @GET("fiats")
-    fun getFiats(): List<FiatEntity>
+    suspend fun getFiats(): List<FiatEntity>
 }

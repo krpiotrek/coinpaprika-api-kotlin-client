@@ -9,7 +9,7 @@ class FiatApi constructor(
         .create(FiatApiContract::class.java)
 ) : FiatApiContract {
 
-    override fun getFiats(): List<FiatEntity> {
+    override suspend fun getFiats(): List<FiatEntity> {
         return retrofit.getFiats()
     }
 }
